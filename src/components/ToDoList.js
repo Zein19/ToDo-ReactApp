@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ToDoForm } from './ToDoForm'
 import { ToDoTasks } from './ToDoTasks'
 import { EditForm } from './EditForm'
 
 export const ToDoList = () => {
-    const [toDos, setToDos] = useState([])
+    const [toDos, setToDos] = useState(() => {
+        const storedTasks = localStorage.getItem('tasks');
+        return storedTasks ? JSON.parse(storedTasks) : [];
+    });
+    
+    useEffect(() => {
+        localStorage.setItem('tasks', JSON.stringify(toDos));
+    }, [toDos]);
+
     const addToDo = toDo => {
         setToDos([...toDos, {id: Math.random(), task: toDo, isCompleted:false, isEditing:false}])
         console.log(toDos)
