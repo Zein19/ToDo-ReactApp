@@ -8,8 +8,8 @@ export const ToDoTasks = ({task, toggleComplete, deleteTask, editTask}) => {
             {task.task}
         </p>
         <div>
-        <button onClick={() => editTask(task.id)}>edit</button>
-        <button onClick={() => deleteTask(task.id)}>delete</button>
+        <button className='edit-btn' onClick={() => editTask(task.id)}>Edit</button>
+        <button className='delete-btn' onClick={() => deleteTask(task.id)}>Delete</button>
         </div>
     </div>
   )
