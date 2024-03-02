@@ -1,4 +1,6 @@
-body{
+/* styles.css */
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,11 +9,11 @@ body{
 }
 
 .ToDoList {
-  max-width: 400px;
+  max-width: 25em; /* Adjusted max-width in em units */
   margin: 1em auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 1.25em;
+  border: 0.0625em solid #ccc; /* Adjusted border width in em units */
+  border-radius: 5px; /* Kept border-radius as it was */
   background-color: rgb(247, 247, 245);
 }
 
@@ -19,8 +21,8 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  border-bottom: 0.0625em solid #ccc; /* Adjusted border width in em units */
+  padding: 0.625em 0;
 }
 
 .todo-tasks p {
@@ -33,52 +35,45 @@ body{
   text-decoration: line-through;
 }
 
-.edit-btn {
+.edit-btn,
+.delete-btn,
+.todo-btn {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 5px; /* Kept border-radius as it was */
+  padding: 0.3125em 0.625em; /* Adjusted padding in em units */
   cursor: pointer;
   margin-right: 0.2em;
 }
 
 .delete-btn {
   background-color: #ff0000;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-right: 0.2em;
-}
-
-.edit-btn:hover {
-  background-color: #0056b3;
-}
-
-.delete-btn:hover {
-  background-color: #800000;
-}
-
-.todo-form {
-  margin-top: 20px;
-}
-
-.todo-input {
-  padding: 8px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 .todo-btn {
   background-color: #45a700;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 15px;
-  cursor: pointer;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.todo-btn:hover {
+  background-color: #0056b3; /* Adjusted hover color for better visibility */
+}
+
+.todo-form {
+  margin-top: 1.25em; /* Adjusted margin-top in em units */
+}
+
+.todo-input {
+  padding: 0.5em; /* Adjusted padding in em units */
+  margin-right: 0.625em; /* Adjusted margin-right in em units */
+  border: 0.0625em solid #ccc; /* Adjusted border width in em units */
+  border-radius: 5px; /* Kept border-radius as it was */
+}
+
+.todo-btn {
+  padding: 0.5em 0.9375em; /* Adjusted padding in em units */
 }
 
 .todo-btn:hover {
