@@ -58,22 +58,22 @@ body {
 .edit-btn:hover,
 .delete-btn:hover,
 .todo-btn:hover {
-  background-color: #0056b3; /* Adjusted hover color for better visibility */
+  background-color: #0056b3; 
 }
 
 .todo-form {
-  margin-top: 1.25em; /* Adjusted margin-top in em units */
+  margin-top: 1.25em; 
 }
 
 .todo-input {
-  padding: 0.5em; /* Adjusted padding in em units */
-  margin-right: 0.625em; /* Adjusted margin-right in em units */
-  border: 0.0625em solid #ccc; /* Adjusted border width in em units */
-  border-radius: 5px; /* Kept border-radius as it was */
+  padding: 0.5em; 
+  margin-right: 0.625em; 
+  border: 0.0625em solid #ccc; 
+  border-radius: 5px; 
 }
 
 .todo-btn {
-  padding: 0.5em 0.9375em; /* Adjusted padding in em units */
+  padding: 0.5em 0.9375em; 
 }
 
 .todo-btn:hover {
